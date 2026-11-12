@@ -4,21 +4,29 @@ A Claude Code mod that scrolls your prompt to the top of the terminal view when 
 
 Tested with Claude Code 2.1.322 and the fullscreen renderer (`"tui": "fullscreen"`).
 
-## Use
+## Install
 
-Start Claude Code with the mod:
+The repository is a plugin marketplace. Install the mod for every session:
+
+```bash
+claude plugin marketplace add serhii-hopkalo/ScrollToTop   # or a local clone's path
+claude plugin install prompt-to-top@prompt-to-top
+```
+
+The install is a copy. To pick up a change, bump `version` in `.claude-plugin/marketplace.json`, then run:
+
+```bash
+claude plugin marketplace update prompt-to-top
+claude plugin update prompt-to-top@prompt-to-top
+```
+
+## Try without installing
 
 ```bash
 claude --plugin-dir /path/to/ScrollToTop/prompt-to-top
 ```
 
-To load it in every session, add an alias to your shell profile:
-
-```bash
-alias claude='claude --plugin-dir /path/to/ScrollToTop/prompt-to-top'
-```
-
-A session started this way reloads the mod at the next prompt after its files change.
+A session started this way reads the files in place and reloads the mod at the next prompt after they change. Do not combine it with the installed mod, or it loads twice.
 
 ## How it works
 

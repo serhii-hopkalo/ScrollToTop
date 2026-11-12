@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "prompt-to-top",
+  "description": "Scrolls a submitted prompt to the top so streamed answers fill downward.",
+  "owner": {
+    "name": "Serhii Hopkalo"
+  },
+  "plugins": [
+    {
+      "name": "prompt-to-top",
+      "source": "./prompt-to-top",
+      "description": "Scrolls a submitted prompt to the top of the view so the streamed answer fills downward.",
+      "version": "0.1.0"
+    }
+  ]
+}
