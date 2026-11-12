@@ -1,0 +1,1 @@
+{ "name": "prompt-to-top", "version": "0.1.0", "description": "Scrolls a submitted prompt to the top of the viewport so the streamed answer fills downward." }
