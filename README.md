@@ -9,13 +9,13 @@ Tested with Claude Code 2.1.322 and the fullscreen renderer (`"tui": "fullscreen
 The repository is a plugin marketplace. Install the mod for every session from a local clone:
 
 ```bash
-claude plugin marketplace add /path/to/ScrollToTop
+claude plugin marketplace add /path/to/prompt-to-top
 claude plugin install prompt-to-top@prompt-to-top
 ```
 
 Sessions then read the mod from the clone itself, so a change applies at the next session start.
 
-To install from GitHub instead, add the marketplace with `claude plugin marketplace add serhii-hopkalo/ScrollToTop`. To pick up later commits from there, run:
+To install from GitHub instead, add the marketplace with `claude plugin marketplace add serhii-hopkalo/prompt-to-top`. To pick up later commits from there, run:
 
 ```bash
 claude plugin marketplace update prompt-to-top
@@ -25,7 +25,7 @@ claude plugin update prompt-to-top@prompt-to-top
 ## Try without installing
 
 ```bash
-claude --plugin-dir /path/to/ScrollToTop/prompt-to-top
+claude --plugin-dir /path/to/prompt-to-top
 ```
 
 A session started this way reloads the mod at the next prompt after its files change. If the mod is installed, disable it first with `claude plugin disable prompt-to-top@prompt-to-top` so only one copy runs.
